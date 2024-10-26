@@ -117,3 +117,19 @@ hr {
 #footer > div > span {
     margin: 4em;
 }
+
+@media screen and (max-width: 1600px) {
+    .individual-table {
+        width: 10vw;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .individual-table {
+        height: 10vw;
+        overflow: wrap;
+        text-overflow: inherit;
+        white-space: normal;
+    }
+}
