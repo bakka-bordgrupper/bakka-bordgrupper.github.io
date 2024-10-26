@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Bordgrupper</title>
+    <meta name = "description" content = "Lager tilfeldige bordgrupper">
+    <meta name = "keywords" content = "">
+    <meta name = "author" content = "f">
+
+    <link rel="icon" type="image/x-icon" href="table.png">
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js"></script>
+</head>
+
+<body>
+
+<div id = "top">
+    <div></div>
+    <div>
+        <h1 style = "font-size: 2em;">Tavle</h1>
+    </div>
+    <div>
+        <h2 style = "font-size: 1.5em;">Dør</h2>
+    </div>
+</div>
+
+<div id = "main">
+
+<table>
+    
+    <tr>
+        <td>
+            <table class = "table-group">
+                <tr>
+                    <td class = "individual-table" data-weight = "0"></td>
+                    <td class = "individual-table" data-weight = "1"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "4"></td>
+                    <td class = "individual-table" data-weight = "5"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "8"></td>
+                    <td class = "individual-table" data-weight = "9"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "13"></td>
+                    <td class = "individual-table" data-weight = "14"></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table class = "table-group">
+                <tr>
+                    <td class = "individual-table" data-weight = "2"></td>
+                    <td class = "individual-table" data-weight = "3"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "6"></td>
+                    <td class = "individual-table" data-weight = "7"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "10"></td>
+                    <td class = "individual-table" data-weight = "11"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "15"></td>
+                    <td class = "individual-table" data-weight = "16"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <table class = "table-group">
+                <tr>
+                    <td class = "individual-table" data-weight = "17"></td>
+                    <td class = "individual-table" data-weight = "18"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "21"></td>
+                    <td class = "individual-table" data-weight = "22"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "25"></td>
+                    <td class = "individual-table" data-weight = "26"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "29"></td>
+                    <td class = "individual-table" data-weight = "30"></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table class = "table-group">
+                <tr>
+                    <td class = "individual-table" data-weight = "19"></td>
+                    <td class = "individual-table" data-weight = "20"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "23"></td>
+                    <td class = "individual-table" data-weight = "24"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "27"></td>
+                    <td class = "individual-table" data-weight = "28"></td>
+                </tr>
+                <tr>
+                    <td class = "individual-table" data-weight = "31"></td>
+                    <td class = "individual-table" data-weight = "32"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+<div id = "input-section">
+    <div>
+        <h3>1)</h3>
+        <label for = "fileInput" class = "custom-file-input">Velg fil</label>
+        <input type = "file" id = "fileInput" onchange = "clearFilename()" style = "display: none;"/>
+        <p id = "file-info" style = "margin: 0; padding: 0;"></p>
+
+        <div style = "text-align: left;">
+            <h4>Filformat</h4>
+            <p>Hvert navn må skrives på en ny linje. Eksempelvis:</p>
+            <div style = "background-color: cornflowerblue; padding: 0.2em 1em; border-radius: 4px;">
+                <p>Navn 1</p>
+                <p>Navn 2</p>
+                <p>Navn 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>2)</h3>
+        <button onclick = "initialiseRandomisation()">Lag bordgrupper</button>
+    </div>
+</div>
+
+
+</div>
+
+
+<div id = "footer">
+    <hr>
+    
+    <div>
+        <span>Opphavsrett © 2024: Felix (en av dem)</span>
+    </div>
+</div>
+
+
+</body>
